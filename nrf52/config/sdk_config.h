@@ -23,14 +23,14 @@
 
 
 #ifndef SPI_MISO_PIN
-#define SPI_MISO_PIN 23
+#define SPI_MISO_PIN 12
 #endif
 
 // <o> SPI_MOSI_PIN - Pin number  <0-31> 
 
 
 #ifndef SPI_MOSI_PIN
-#define SPI_MOSI_PIN 22
+#define SPI_MOSI_PIN 11
 #endif
 
 // <o> SPI_SS_PIN - Pin number  <0-31> 

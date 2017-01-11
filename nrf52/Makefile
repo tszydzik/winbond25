@@ -2,8 +2,16 @@ PROJECT_NAME     := spi_pca10040
 TARGETS          := nrf52832_xxaa
 OUTPUT_DIRECTORY := _build
 
+LENOVO := 0
+
+ifeq (LENOVO,1)
 SDK_ROOT := /opt/nordicsemi/nRF5_SDK_12.1.0_0d23e2a
+else
+SDK_ROOT := /home/dev1/svn/padit/trunk/resources/nordicSemi/nRF5_SDK_12.1.0_0d23e2a
+endif
+
 PROJ_DIR := .
+
 
 $(OUTPUT_DIRECTORY)/nrf52832_xxaa.out: \
   LINKER_SCRIPT  := spi_gcc_nrf52.ld

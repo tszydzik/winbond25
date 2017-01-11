@@ -65,7 +65,7 @@ int main(void)
     while (1)
     {
         // Reset rx buffer and transfer done flag
-        memset(m_rx_buf, 0, m_length_rx);
+        memset(m_rx_buf, 255, m_length_rx);
         spi_xfer_done = false;
 
         APP_ERROR_CHECK(nrf_drv_spi_transfer(&spi, m_tx_buf, 1, m_rx_buf, 4));
